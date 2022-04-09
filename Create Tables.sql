@@ -24,6 +24,7 @@ CREATE TABLE Cliente
 
 CREATE TABLE Fidelidade
 (
+	--tabela fidelidade
 	Codigo_Cliente int,
 	Data_Adesao DATETIME NOT NULL,
 	Pontos INT,
@@ -34,6 +35,7 @@ CREATE TABLE Fidelidade
 
 CREATE TABLE Forma_Pagamento
 (
+	-- tabela forma de pagamento
 	Codigo INT IDENTITY (1,1) NOT NULL,
 	Nome VARCHAR(25),
 	Tipo VARCHAR(25),
@@ -43,6 +45,7 @@ CREATE TABLE Forma_Pagamento
 
 CREATE TABLE Marca
 (
+	-- tabela de marca
 	Codigo INT IDENTITY(1,1) NOT NULL,
 	Nome VARCHAR(20),
 	Empresa VARCHAR(30),
@@ -63,6 +66,7 @@ CREATE TABLE Produto
 
 CREATE TABLE Pedido_Venda
 (
+	-- tabela pedido de venda
 	Codigo INT IDENTITY(1,1) NOT NULL,
 	Valor DECIMAL(6,2),
 	Valor_Imposto DECIMAL(6,2),
